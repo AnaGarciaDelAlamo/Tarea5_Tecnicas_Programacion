@@ -24,17 +24,22 @@ Ejemplo de ejecución:
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int TAMAÑO = 4;
-        int i, j;
-        int[][] tab2d = new int[TAMAÑO][TAMAÑO];
+        int[][] tab2d = new int[4][4];
+        for(int i = 0; i < tab2d.length; i++) {
+            for(int j = 0; j < tab2d[i].length; j++) {
+                tab2d[i][j] = Math.random() < 0.5 ? 0 : 1;
+            }
+        }
 
-
-        for (j = 0; j < TAMAÑO; j++) {
-            for (i = 0; i < TAMAÑO; i++) {
-                System.out.print(tab2d[j][i] + "?");
+        for(int i = 0; i < tab2d.length; i++) {
+            for(int j = 0; j < tab2d[i].length; j++) {
+                System.out.print(tab2d[i][j]);
             }
             System.out.println();
+        }
+        boolean terminar = false;
 
+        do{
 
             System.out.println("¿Qué columna? ");
             int columna = sc.nextInt();
@@ -43,16 +48,22 @@ Ejemplo de ejecución:
             if (tab2d[fila][columna] == 0) {
                 System.out.println("Agua");
                 System.out.println(tab2d[fila][columna]);
+                terminar = false;
             } else {
                 System.out.println("Tocado");
                 System.out.println(tab2d[fila][columna]);
+                terminar = false;
             }
 
             if (tab2d[fila][columna] == 1) {
                 System.out.println("Hundido");
+                System.out.println("Ha ganado");
                 System.out.println(tab2d[fila][columna]);
+                terminar = true;
             }
             System.out.println();
-        }
+
+        }while(terminar == false);
+
     }
 }
