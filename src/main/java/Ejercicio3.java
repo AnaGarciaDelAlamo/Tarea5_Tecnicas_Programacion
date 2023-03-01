@@ -26,7 +26,7 @@ Ejemplo de ejecución del algoritmo:
 
 La media de las notas (12; 15; 8; 7) es 10,5.*/
 
-    public static void main(String[] args) {
+    public void notaMedia(){
         Scanner sc = new Scanner(System.in);
         int[] tabla = new int[10];
         int valor =0;
@@ -50,4 +50,5 @@ La media de las notas (12; 15; 8; 7) es 10,5.*/
         }
         System.out.println(") es " + (double) suma / contador);
     }
+
 }

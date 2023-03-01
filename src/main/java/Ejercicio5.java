@@ -13,7 +13,7 @@ kayak#
 
 kayak es un palíndromo*/
 
-    public static void main(String[] args) {
+    public void palindromo(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Escriba una palabra y después #");
         String palabra = sc.nextLine();

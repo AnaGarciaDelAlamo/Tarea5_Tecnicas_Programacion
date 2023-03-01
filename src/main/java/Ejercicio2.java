@@ -47,7 +47,8 @@ Cantidad de 7: 0
 Cantidad de 8: 0
 
 Cantidad de 9: 1*/
-    public static void main(String[] args) {
+
+    public void numOcurrencias(){
         Scanner sc = new Scanner(System.in);
         int[] tabla = new int[10];
         int valor =0;
@@ -61,5 +62,6 @@ Cantidad de 9: 1*/
         for (int i = 0; i < tabla.length; i++) {
             System.out.println("Cantidad de " + i + ": " + tabla[i]);
         }
+
     }
 }

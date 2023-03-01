@@ -43,9 +43,4 @@ public class Ejercicio8 {
         } while (filaUsuario != fila || columnaUsuario != columna);
         System.out.println("Ha ganado");
     }
-
-    public static void main(String[] args) {
-        Ejercicio8 juego = new Ejercicio8();
-        juego.juego();
-    }
 }

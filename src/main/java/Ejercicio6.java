@@ -50,23 +50,22 @@ Modificar el algoritmo nuevamente, para tener los siguientes valores en la tabla
 5
 
 6*/
-
-    public static void main(String[] args) {
-        int TAMAÑO = 3;
-        int i, j, val;
-        int[][] tab2d = new int[TAMAÑO][TAMAÑO];
-        val = 1;
-        for (j = 0; j < TAMAÑO; j++) {
-            for (i = 0; i < TAMAÑO; i++) {
-                tab2d[j][i] = val;
-                val = val + 1;
-            }
-        }
-        for (j = 0; j < TAMAÑO; j++) {
-            for (i = 0; i < TAMAÑO; i++) {
-                System.out.print(tab2d[j][i] + " ");
-            }
-            System.out.println();
+public void queHace(){
+    int TAMAÑO = 3;
+    int i, j, val;
+    int[][] tab2d = new int[TAMAÑO][TAMAÑO];
+    val = 1;
+    for (j = 0; j < TAMAÑO; j++) {
+        for (i = 0; i < TAMAÑO; i++) {
+            tab2d[j][i] = val;
+            val = val + 1;
         }
     }
+    for (j = 0; j < TAMAÑO; j++) {
+        for (i = 0; i < TAMAÑO; i++) {
+            System.out.print(tab2d[j][i] + " ");
+        }
+        System.out.println();
+    }
+}
 }

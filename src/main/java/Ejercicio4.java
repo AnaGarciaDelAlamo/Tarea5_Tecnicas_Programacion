@@ -15,42 +15,42 @@ Elija entre:
 
 4 - Nadia LETUX*/
 
-    public static void main(String[] args) {
+    public void maquinaVotar(){
         Scanner sc = new Scanner(System.in);
         int[] tabla = new int[4];
         int valor;
         try{
-        do{
+            do{
 
-            System.out.println("Elija entre: ");
-            System.out.println("1 - Emilia TERREROS");
-            System.out.println("2 - Gerardo ESCODAR");
-            System.out.println("3 - María AGUAVIVA");
-            System.out.println("4 - Nadia LETUX");
+                System.out.println("Elija entre: ");
+                System.out.println("1 - Emilia TERREROS");
+                System.out.println("2 - Gerardo ESCODAR");
+                System.out.println("3 - María AGUAVIVA");
+                System.out.println("4 - Nadia LETUX");
 
-            valor = sc.nextInt();
+                valor = sc.nextInt();
 
-            switch (valor){
-                case 1:
-                    System.out.println("Ha votado a Emilia TERREROS");
-                    tabla[0]++;
-                    break;
-                case 2:
-                    System.out.println("Ha votado a Gerardo ESCODAR");
-                    tabla[1]++;
-                    break;
-                case 3:
-                    System.out.println("Ha votado a María AGUAVIVA");
-                    tabla[2]++;
-                    break;
-                case 4:
-                    System.out.println("Ha votado a Nadia LETUX");
-                    tabla[3]++;
-                    break;
-            }
+                switch (valor){
+                    case 1:
+                        System.out.println("Ha votado a Emilia TERREROS");
+                        tabla[0]++;
+                        break;
+                    case 2:
+                        System.out.println("Ha votado a Gerardo ESCODAR");
+                        tabla[1]++;
+                        break;
+                    case 3:
+                        System.out.println("Ha votado a María AGUAVIVA");
+                        tabla[2]++;
+                        break;
+                    case 4:
+                        System.out.println("Ha votado a Nadia LETUX");
+                        tabla[3]++;
+                        break;
+                }
 
 
-        }while (valor != 68753421);
+            }while (valor != 68753421);
         }catch (Exception e){
             System.out.println("Ha introducido un valor incorrecto");
         }
